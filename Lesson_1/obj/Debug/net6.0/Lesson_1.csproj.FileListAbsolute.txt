@@ -1,0 +1,15 @@
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/bin/Debug/net6.0/Lesson_1
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/bin/Debug/net6.0/Lesson_1.deps.json
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/bin/Debug/net6.0/Lesson_1.runtimeconfig.json
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/bin/Debug/net6.0/Lesson_1.dll
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/bin/Debug/net6.0/Lesson_1.pdb
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.csproj.AssemblyReference.cache
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.AssemblyInfoInputs.cache
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.AssemblyInfo.cs
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.csproj.CoreCompileInputs.cache
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.dll
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/refint/Lesson_1.dll
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.pdb
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/Lesson_1.genruntimeconfig.cache
+/Volumes/GolJen_Work/GeekBrains/HomeWork_C#/Lesson_1/obj/Debug/net6.0/ref/Lesson_1.dll
