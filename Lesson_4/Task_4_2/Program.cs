@@ -4,6 +4,12 @@ int ReadNaturalNumber()
 {
     Console.Write("Введите натуральное число: ");
     int number = Convert.ToInt32(Console.ReadLine());
+    while (number <= 0)
+    {
+        Console.Write("ОШИБКА!!! Вы ввели не натуральное число. ");
+        Console.Write("Введите натуральное число: ");
+        number = Convert.ToInt32(Console.ReadLine());
+    }
     Console.WriteLine($"Вы ввели число {number}");
     Console.WriteLine();
 
