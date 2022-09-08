@@ -15,7 +15,7 @@ int [] CreatArray(int size) // Создание массива, заполнен
 void WriteArray(int [] array) // Вывод массива на экран.
 {
     int count = array.Length;
-    Console.Write($"Массив из {count} элементов: ");
+    Console.Write($"массив из {count} элементов: ");
     Console.Write("[");
     for (int i = 0; i < count; i++)
     {
@@ -49,20 +49,28 @@ int MinElement(int [] array) // Определние минимаьного зн
     return min;
 }
 
-Console.Write("Введите размер массива: ");
-int number = Convert.ToInt32(Console.ReadLine());
-while (number <= 0)
+int ReadArraySize() // Ввод размера массива
+{
+    Console.Write("Введите размер массива: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    while (number <= 0)
     {
         Console.Write("ОШИБКА!!! Размер массива должен быть больше 0. ");
         Console.Write("Введите размер массива: ");
         number = Convert.ToInt32(Console.ReadLine());
     }
-int [] RandomAarray = new int [number];
-RandomAarray = CreatArray(number);
-Console.WriteLine("Создан следующий массив:");
+    return number;
+}
+
+// Основное тело программы
+
+int arraySize = ReadArraySize();
+int [] RandomAarray = new int [arraySize];
+RandomAarray = CreatArray(arraySize);
+Console.Write("Создан ");
 WriteArray(RandomAarray);
-int maxelement = MaxElement(RandomAarray);
-int minelement = MinElement(RandomAarray);
-int diffvalues = maxelement - minelement;
-Console.WriteLine($"Разница max и min занчений элементов массива равна {diffvalues}");
+int maxElement = MaxElement(RandomAarray);
+int minElement = MinElement(RandomAarray);
+int diffValues = maxElement - minElement;
+Console.WriteLine($"Разница max и min значений элементов массива равна {diffValues}");
 
