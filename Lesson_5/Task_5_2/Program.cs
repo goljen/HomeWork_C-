@@ -15,7 +15,7 @@ int [] CreatArray(int size) // Создание массива, заполнен
 void WriteArray(int [] array) // Вывод массива на экран.
 {
     int count = array.Length;
-    Console.Write($"Массив из {count} элементов: ");
+    Console.Write($"массив из {count} элементов: ");
     Console.Write("[");
     for (int i = 0; i < count; i++)
     {
@@ -38,17 +38,25 @@ int SuumOddElements(int [] array) // Определние суммы нечет�
     return summa;
 }
 
-Console.Write("Введите размер массива: ");
-int number = Convert.ToInt32(Console.ReadLine());
-while (number <= 0)
+int ReadArraySize() // Ввод размера массива
+{
+    Console.Write("Введите размер массива: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    while (number <= 0)
     {
         Console.Write("ОШИБКА!!! Размер массива должен быть больше 0. ");
         Console.Write("Введите размер массива: ");
         number = Convert.ToInt32(Console.ReadLine());
     }
-int [] RandomAarray = new int [number];
-RandomAarray = CreatArray(number);
-Console.WriteLine("Создан следующий массив:");
+    return number;
+}
+
+// Основное тело программы
+
+int arraySize = ReadArraySize();
+int [] RandomAarray = new int [arraySize];
+RandomAarray = CreatArray(arraySize);
+Console.Write("Создан ");
 WriteArray(RandomAarray);
 int sumelements = SuumOddElements(RandomAarray);
 Console.WriteLine($"Сумма нечетных элементов массива равна {sumelements}");
