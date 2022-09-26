@@ -25,20 +25,26 @@ void WriteArray(double [,] array)
     }
 }
 
-Console.Write("Введите количество строк массива:");
-int numberRows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите количество столбцов массива:");
-int numberColumns = Convert.ToInt32(Console.ReadLine());
-while(numberRows <= 0 || numberColumns <= 0)
+void ReadArrayParameters(out int rows, out int columns)
 {
-    Console.WriteLine("ОШИБКА!!!");
-    Console.WriteLine("Количество строк и столбцов массива должно быть больше 0 ");
-    Console.WriteLine("Попробуйте ещё раз.");
     Console.Write("Введите количество строк массива:");
-    numberRows = Convert.ToInt32(Console.ReadLine());
+    rows = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите количество столбцов массива:");
-    numberColumns = Convert.ToInt32(Console.ReadLine());
+    columns = Convert.ToInt32(Console.ReadLine());
+    while(rows <= 0 || columns <= 0)
+    {
+        Console.WriteLine("ОШИБКА!!!");
+        Console.WriteLine("Количество строк и столбцов массива должно быть больше 0 ");
+        Console.WriteLine("Попробуйте ещё раз.");
+        Console.Write("Введите количество строк массива:");
+        rows = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите количество столбцов массива:");
+        columns = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите количество строк массива:");
+    }
 }
-
+int numberRows;
+int numberColumns;
+ReadArrayParameters(out numberRows, out numberColumns);
 double [,] newArray = CreateArray(numberRows, numberColumns);
 WriteArray(newArray);
